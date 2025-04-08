@@ -10,7 +10,7 @@ const SearchPage = () => {
   const searchParams = useSearchParams();
   const query = searchParams.get("query");
 
-  const [movies, setMovies] = useState<any>([]);
+  const [movies, setMovies] = useState<Media[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
